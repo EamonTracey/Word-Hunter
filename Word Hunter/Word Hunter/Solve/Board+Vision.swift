@@ -55,7 +55,7 @@ extension Board {
         // If unable to crop image to a rectangle, use full image for text recognition
         croppedImage = croppedImage ?? cgImage
         
-        // Create vision request handler for cgImage
+        // Create vision request handler for croppedImage
         let croppedHandler = VNImageRequestHandler(cgImage: croppedImage)
         
         // Request text from cropped image

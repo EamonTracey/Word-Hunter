@@ -9,7 +9,7 @@ import SwiftUI
 
 struct CharacterField: View {
     @StateObject private var vm: ViewModel
-    private var titleKey: LocalizedStringKey
+    private let titleKey: LocalizedStringKey
     
     init(_ titleKey: LocalizedStringKey, char: Binding<Character>) {
         self._vm = StateObject(wrappedValue: ViewModel(char: char))
